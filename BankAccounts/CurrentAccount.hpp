@@ -1,21 +1,21 @@
 //
-//  SavingsAccount.hpp
+//  CurrentAccount.hpp
 //  BankAccounts
 //
 //  Created by Soheil on 31/01/2018.
 //  Copyright © 2018 Soheil Novinfard. All rights reserved.
 //
 
-#ifndef SavingsAccount_hpp
-#define SavingsAccount_hpp
+#ifndef CurrentAccount_hpp
+#define CurrentAccount_hpp
 
 #include <stdio.h>
 #include <string>
 #include "Account.hpp"
 
-class SavingsAccount: public Account {
+class CurrentAccount: public Account {
 public:
-	SavingsAccount(const std::string &, double);
+	CurrentAccount(const std::string &, double);
 	
 	void withdraw(double) override;
 	double getInterest() const override;
@@ -24,4 +24,4 @@ public:
 	
 };
 
-#endif /* SavingsAccount_hpp */
+#endif /* CurrentAccount_hpp */

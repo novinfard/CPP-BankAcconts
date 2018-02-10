@@ -14,18 +14,26 @@
 
 class Account {
 public:
-	Account(double, double);
+	Account(const std::string &, double);
 	
 	double getBalance() const;
-	double getInterest() const;
-	void deposit(double) const;
+	void deposit(double);
+	void setFullname(const std::string &);
+	std::string getFullname() const;
 	
-	virtual void withdraw(double) const = 0; // pure virtual
-//	virtual void changeInterestRate() const = 0; // pure virtual
+	virtual void withdraw(double);
+	virtual double getInterest() const = 0; // pure virtual
+	virtual void setInterest();
+	virtual double getInterestRate() const = 0; // pure virtual
+
 	
 private:
+	std::string fullname;
 	double balance;
-	const double interestRate;
+	
+protected:
+	void setBalance(double);
+	double interestRate;
 };
 
 #endif /* Account_hpp */

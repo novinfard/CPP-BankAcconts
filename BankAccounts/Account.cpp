@@ -7,22 +7,43 @@
 //
 
 #include "Account.hpp"
+using namespace std;
 
-Account::Account(double balanceValue, double interestRateValue):
-balance(balanceValue), interestRate(interestRateValue) {
+Account::Account(const string &firstnameValue, double balanceValue):
+fullname(firstnameValue), balance(balanceValue) {
 	
 }
 
-double Account::getInterest() const {
-	double interest = balance * interestRate;
-	return interest;
+void Account::setBalance(double balanceValue) {
+	balance = balanceValue;
 }
 
 double Account::getBalance() const {
 	return balance;
 }
 
-void Account::deposit(double) const {
-	// TODO
+void Account::deposit(double depositValue) {
+	setBalance(balance + depositValue);
 }
+
+void Account::setFullname(const string &fullnameValue) {
+	fullname = fullnameValue;
+}
+
+string Account::getFullname() const {
+	return fullname;
+}
+
+void Account::withdraw(double withdrawValue) {
+	if(getBalance() - withdrawValue >= 0) {
+		setBalance(getBalance() - withdrawValue);
+	} else {
+		throw invalid_argument("saving account's balance should be >= 0.0");
+	}
+}
+
+void Account::setInterest() {
+	throw invalid_argument("This member function is only could be applied for children which implements this class");
+}
+
 

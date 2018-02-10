@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		CD0D3040202234A20066E264 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD0D303F202234A20066E264 /* main.cpp */; };
-		CD0D304820223E130066E264 /* Customer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD0D304620223E130066E264 /* Customer.cpp */; };
 		CD0D304B202242680066E264 /* Account.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD0D3049202242680066E264 /* Account.cpp */; };
 		CD0D304E202247210066E264 /* SavingsAccount.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD0D304C202247210066E264 /* SavingsAccount.cpp */; };
+		CD86E722202F8D9A0007F817 /* CurrentAccount.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD86E721202F8D9A0007F817 /* CurrentAccount.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,12 +28,12 @@
 /* Begin PBXFileReference section */
 		CD0D303C202234A20066E264 /* BankAccounts */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BankAccounts; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD0D303F202234A20066E264 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		CD0D304620223E130066E264 /* Customer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Customer.cpp; sourceTree = "<group>"; };
-		CD0D304720223E130066E264 /* Customer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Customer.hpp; sourceTree = "<group>"; };
 		CD0D3049202242680066E264 /* Account.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Account.cpp; sourceTree = "<group>"; };
 		CD0D304A202242680066E264 /* Account.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Account.hpp; sourceTree = "<group>"; };
 		CD0D304C202247210066E264 /* SavingsAccount.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SavingsAccount.cpp; sourceTree = "<group>"; };
 		CD0D304D202247210066E264 /* SavingsAccount.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SavingsAccount.hpp; sourceTree = "<group>"; };
+		CD86E720202F8D9A0007F817 /* CurrentAccount.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CurrentAccount.hpp; sourceTree = "<group>"; };
+		CD86E721202F8D9A0007F817 /* CurrentAccount.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CurrentAccount.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,12 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				CD0D303F202234A20066E264 /* main.cpp */,
-				CD0D304620223E130066E264 /* Customer.cpp */,
-				CD0D304720223E130066E264 /* Customer.hpp */,
 				CD0D3049202242680066E264 /* Account.cpp */,
 				CD0D304A202242680066E264 /* Account.hpp */,
 				CD0D304C202247210066E264 /* SavingsAccount.cpp */,
 				CD0D304D202247210066E264 /* SavingsAccount.hpp */,
+				CD86E721202F8D9A0007F817 /* CurrentAccount.cpp */,
+				CD86E720202F8D9A0007F817 /* CurrentAccount.hpp */,
 			);
 			path = BankAccounts;
 			sourceTree = "<group>";
@@ -136,8 +136,8 @@
 			files = (
 				CD0D3040202234A20066E264 /* main.cpp in Sources */,
 				CD0D304B202242680066E264 /* Account.cpp in Sources */,
-				CD0D304820223E130066E264 /* Customer.cpp in Sources */,
 				CD0D304E202247210066E264 /* SavingsAccount.cpp in Sources */,
+				CD86E722202F8D9A0007F817 /* CurrentAccount.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
